@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kyle Parrish</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Kyle Parrish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adapting to a Hybrid Workforce with 1E&#39;s Tachyon 8 Product</title>
+      <link>http://localhost:1313/blogs/techyon-1e-review/</link>
+      <pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/techyon-1e-review/</guid>
+      <description>Adapting to a Hybrid Workforce with 1E&amp;rsquo;s Tachyon Product Beginning in early 2021, there has been a trending increase in the number of people that are quitting their jobs due to what seems to be a direct result of the COVID-19 pandemic. This trend, primarily in the United States, has been termed the Great Resignation, with four million Americans resigning in April alone.&#xA;For some, illness directly related to COVID-19 may be why we’re seeing this shift to resigning, and for others, it may be the desire to find a new job that fits the new lifestyle that they have been forced to adopt.</description>
+    </item>
+    <item>
+      <title>Creating a Config File for your PowerShell Scripts</title>
+      <link>http://localhost:1313/blogs/powershell-script-config-file/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/powershell-script-config-file/</guid>
+      <description>Introduction Recently, I was working on a PowerShell scripts that I wanted to share with others on my team but did not want to commit it to our Git repository with the customizable variables declared in the code (Always best practice. Keep the sensitives out of repos!). Instead, I wanted to implement a way to have a config file where these configurable variables can be set and the main script would load them when launched.</description>
+    </item>
+    <item>
+      <title>PSEmailRep PowerShell Module</title>
+      <link>http://localhost:1313/blogs/using-psemailrep/</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/using-psemailrep/</guid>
+      <description>Introduction Hey! Kyle here. I recently released a small update to one of the PowerShell modules I put together to interact with EmailRep&amp;rsquo;s API and thought I would share a little about what it is and why I built it.&#xA;Github PowerShellGallery First of all, if you work in Information Security or IT in general, be sure to check out EmailRep.io. This is an excellent service built by a great group of people to provide enrichment data about an email address.</description>
+    </item>
+  </channel>
+</rss>
