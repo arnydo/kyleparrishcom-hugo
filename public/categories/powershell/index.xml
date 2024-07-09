@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Powershell on Kyle Parrish</title>
-    <link>https://kyleparrish.com/categories/powershell/</link>
+    <link>http://localhost:1313/kyleparrish.github.io/categories/powershell/</link>
     <description>Recent content in Powershell on Kyle Parrish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://kyleparrish.com/categories/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/kyleparrish.github.io/categories/powershell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a Config File for your PowerShell Scripts</title>
-      <link>https://kyleparrish.com/blogs/powershell-script-config-file/</link>
+      <link>http://localhost:1313/kyleparrish.github.io/blogs/powershell-script-config-file/</link>
       <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://kyleparrish.com/blogs/powershell-script-config-file/</guid>
+      <guid>http://localhost:1313/kyleparrish.github.io/blogs/powershell-script-config-file/</guid>
       <description>Introduction Recently, I was working on a PowerShell scripts that I wanted to share with others on my team but did not want to commit it to our Git repository with the customizable variables declared in the code (Always best practice. Keep the sensitives out of repos!). Instead, I wanted to implement a way to have a config file where these configurable variables can be set and the main script would load them when launched.</description>
     </item>
     <item>
       <title>PSEmailRep PowerShell Module</title>
-      <link>https://kyleparrish.com/blogs/using-psemailrep/</link>
+      <link>http://localhost:1313/kyleparrish.github.io/blogs/using-psemailrep/</link>
       <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://kyleparrish.com/blogs/using-psemailrep/</guid>
+      <guid>http://localhost:1313/kyleparrish.github.io/blogs/using-psemailrep/</guid>
       <description>Introduction Hey! Kyle here. I recently released a small update to one of the PowerShell modules I put together to interact with EmailRep&amp;rsquo;s API and thought I would share a little about what it is and why I built it.&#xA;Github PowerShellGallery First of all, if you work in Information Security or IT in general, be sure to check out EmailRep.io. This is an excellent service built by a great group of people to provide enrichment data about an email address.</description>
     </item>
   </channel>

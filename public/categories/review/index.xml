@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Review on Kyle Parrish</title>
-    <link>https://kyleparrish.com/categories/review/</link>
+    <link>http://localhost:1313/kyleparrish.github.io/categories/review/</link>
     <description>Recent content in Review on Kyle Parrish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 06 Jan 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://kyleparrish.com/categories/review/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/kyleparrish.github.io/categories/review/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adapting to a Hybrid Workforce with 1E&#39;s Tachyon 8 Product</title>
-      <link>https://kyleparrish.com/blogs/techyon-1e-review/</link>
+      <link>http://localhost:1313/kyleparrish.github.io/blogs/techyon-1e-review/</link>
       <pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://kyleparrish.com/blogs/techyon-1e-review/</guid>
+      <guid>http://localhost:1313/kyleparrish.github.io/blogs/techyon-1e-review/</guid>
       <description>Adapting to a Hybrid Workforce with 1E&amp;rsquo;s Tachyon Product Beginning in early 2021, there has been a trending increase in the number of people that are quitting their jobs due to what seems to be a direct result of the COVID-19 pandemic. This trend, primarily in the United States, has been termed the Great Resignation, with four million Americans resigning in April alone.&#xA;For some, illness directly related to COVID-19 may be why we’re seeing this shift to resigning, and for others, it may be the desire to find a new job that fits the new lifestyle that they have been forced to adopt.</description>
     </item>
   </channel>

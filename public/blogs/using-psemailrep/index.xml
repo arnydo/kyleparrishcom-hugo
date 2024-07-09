@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PSEmailRep PowerShell Module on Kyle Parrish</title>
-    <link>https://kyleparrish.com/blogs/using-psemailrep/</link>
+    <link>http://localhost:1313/kyleparrish.github.io/blogs/using-psemailrep/</link>
     <description>Recent content in PSEmailRep PowerShell Module on Kyle Parrish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://kyleparrish.com/blogs/using-psemailrep/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/kyleparrish.github.io/blogs/using-psemailrep/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
