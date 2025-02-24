@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Powershell on Kyle Parrish</title>
+    <link>http://localhost:1313/tags/powershell/</link>
+    <description>Recent content in Powershell on Kyle Parrish</description>
+    <image>
+      <title>Kyle Parrish</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.144.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Config File for your PowerShell Scripts</title>
+      <link>http://localhost:1313/posts/powershell-script-config-file/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/powershell-script-config-file/</guid>
+      <description>Creating a Config File for your PowerShell Scripts</description>
+    </item>
+    <item>
+      <title>PSEmailRep PowerShell Module</title>
+      <link>http://localhost:1313/posts/psemailrep-module/</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/psemailrep-module/</guid>
+      <description>Using the PSEmailRep PowerShell Module</description>
+    </item>
+  </channel>
+</rss>
