@@ -25,7 +25,7 @@ params:
   homeInfoParams:
     Title: "Hi there \U0001F44B"
     Content: >-
-      Welcome to my blog. I am Kyle Parrish, a hacker, challenge builder, and outdoor enthusiast. I am passionate about technology, security, and the outdoors. I am always looking for new challenges and ways to improve my skills. I am always looking to connect with like-minded individuals and learn new things. I hope you enjoy my blog and find it helpful. Feel free to reach out to me if you have any questions or want to chat.
+      Welcome to my blog. I am Kyle Parrish, a hacker, challenge builder, and outdoor enthusiast. I am passionate about technology, security, and the outdoors. I am always looking for new challenges and ways to improve my skills. I am always looking to connect with like-minded individuals and learn new things. I hope you enjoy my blog and find it helpful. Feel free to reach out to me if you have any questions or want to chat!
   socialIcons:
     - name: email
       url: 'mailto:kyle@kyleparrish.com'
