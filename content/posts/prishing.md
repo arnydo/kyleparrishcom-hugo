@@ -14,75 +14,14 @@ cover:
 
 # The Attack
 
-During a recent internal red team assessment for a client, I found myself in familiar territory—established inside their network through a Citrix instance, carefully proxying commands through a covert tunnel to avoid detection. What started as routine reconnaissance would lead me to discover an attack vector I'd never seen exploited in the wild: turning multifunction printers into phishing delivery systems. I jokingly called it "prishing"—printer phishing.
+During a recent internal red team assessment for a client, I found myself in familiar territory—established inside their network through a Citrix instance, carefully proxying commands through a covert tunnel to avoid detection.
+What started as routine reconnaissance would lead me to discover an attack vector I'd never seen exploited in the wild: turning multifunction printers into phishing delivery systems.
+I jokingly called it "prishing"—printer phishing, a play on other phishing techniques like "quishing" (QR code phishing) and "vishing" (voice phishing).
 
 The assessment began like many others. I had established a tunnel from the client's Citrix environment back to my remote machine, allowing me to proxy commands through the Citrix instance to stay under the radar. Rather than perform noisy network scans that might trigger alerts, I decided to gather intelligence about network hosts through DNS enumeration.
 
-## Mapping the Network Through DNS
-
-Using [https://github.com/dirkjanm/adidnsdump](adidnsdump), one of [https://github.com/dirkjanm](Dirk-jan's) amazing tools, I began extracting DNS records from the domain controller—a technique that's both stealthy and very revealing:
-
-```bash
-> proxychains adidnsdump -u contoso\\kparrish ldaps://10.120.2.1 --print-zones
-[proxychains] config file found: /etc/proxychains4.conf
-[proxychains] preloading /usr/lib/x86_64-linux-gnu/libproxychains.so.4
-[proxychains] DLL init: proxychains-ng 4.16
-Password: 
-[-] Connecting to host...
-[-] Binding to host
-[proxychains] Strict chain  ...  127.0.0.1:9050  ...  10.120.2.1:636  ...  OK
-[+] Bind OK
-[-] Found 4 domain DNS zones:
-    ..InProgress-49FF28D630D02FE1-contoso.ext
-    ..InProgress-49FF28E630D06EEE-contoso.ext
-    contoso.com
-    RootDNSServers
-[-] Found 1 forest DNS zones (dump with --forest):
-    ..TrustAnchors
-    contoso.com
-[-] Found 6 legacy DNS zones (dump with --legacy):
-    120.10.in-addr.arpa
-    168.192.in-addr.arpa
-    contoso.com
-    contoso.local
-```
-
-The legacy DNS zones looked promising, so I extracted the records:
-
-```bash
-> proxychains adidnsdump -u contoso\\kparrish ldaps://10.120.2.1 --legacy
-[proxychains] config file found: /etc/proxychains4.conf
-[proxychains] preloading /usr/lib/x86_64-linux-gnu/libproxychains.so.4
-[proxychains] DLL init: proxychains-ng 4.16
-Password: 
-[-] Connecting to host...
-[-] Binding to host
-[proxychains] Strict chain  ...  127.0.0.1:9050  ...  10.120.2.1:636  ...  OK
-[+] Bind OK
-[-] Querying zone for records
-[+] Found 104 records
-```
-
-The results were saved to a CSV file which I examined to reveal some of the network's topology:
-
-```bash
-> head records.csv
-A,CONTOSO-SRV-01,10.120.2.10
-A,CONTOSO-SRV-02,10.120.2.11
-A,CONTOSO-SRV-03,10.120.2.12
-A,CONTOSO-SRV-04,10.120.2.13
-A,CONTOSO-MFP-01,10.120.2.105
-A,CONTOSO-MFP-02,10.120.2.106
-A,CONTOSO-MFP-03,10.120.2.107
-A,CONTOSO-MFP-04,10.120.2.108
-A,CONTOSO-LT-01,10.120.2.109
-A,CONTOSO-LT-02,10.120.2.110
-A,CONTOSO-LT-03,10.120.2.111
-A,CONTOSO-LT-04,10.120.2.112
-...
-```
-
-The `-MFP-` records immediately caught my attention. These were clearly multifunction printers—devices that in my experience often run with default credentials and minimal security hardening.
+With hundreds of host records collected, the hosts containing `-MFP-` (CONTOSO-MFP-01) immediately caught my attention.
+These were clearly multifunction printers—devices that in my experience often run with default credentials and minimal security hardening.
 
 ## The Printer Vulnerability
 
