@@ -34,7 +34,7 @@ params:
     - name: linkedin
       url: 'https://linkedin.com/in/bruce-kyle-parrish'
     - name: twitter
-      url: 'https://twitter.com/arnydo'
+      url: 'https://x.com/kyle_parrish_'
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
